@@ -3,53 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio en GitHub</title>
+    <title>Mi Portafolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+            width: 100%;
+        }
+        .header img {
+            width: 200px;
+            border-radius: 50%;
+            border: 5px solid #fff;
         }
         .container {
-            text-align: center;
-            background: white;
+            max-width: 800px;
+            width: 100%;
             padding: 20px;
+            background: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
         }
-        img {
-            width: 150px;
-            border-radius: 50%;
-            margin-bottom: 15px;
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-left: 5px solid #007bff;
+            background: #f9f9f9;
+            border-radius: 5px;
         }
-        h1 {
-            color: #333;
+        .section h2 {
+            color: #007bff;
         }
-        p {
-            color: #666;
+        .links {
+            text-align: center;
+            margin: 20px 0;
         }
         .links a {
             text-decoration: none;
-            color: #0073b1;
-            margin: 0 10px;
+            color: #fff;
+            background: #007bff;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
             font-weight: bold;
+            transition: background 0.3s;
+        }
+        .links a:hover {
+            background: #0056b3;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            width: 100%;
         }
     </style>
 </head>
 <body>
+    <div class="header">
+        <img src="https://via.placeholder.com/200" alt="Foto de Perfil">
+        <h1>Juan Pérez</h1>
+        <p>Desarrollador de Software | Apasionado por la innovación y la tecnología</p>
+    </div>
+    
     <div class="container">
-        <img src="https://via.placeholder.com/150" alt="Mi Foto de Perfil">
-        <h1>Mi Nombrexxxx</h1>
-        <p>Desarrollador de software apasionado por laxxxxx tecnología y la innovación.</p>
+        <div class="section">
+            <h2>Sobre Mí</h2>
+            <p>Soy un desarrollador de software con experiencia en tecnologías web, bases de datos y aprendizaje automático.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Educación</h2>
+            <p>Universidad Nacional - Ingeniería en Software</p>
+        </div>
+        
+        <div class="section">
+            <h2>Experiencia</h2>
+            <p>Desarrollador en Tech Solutions - 3 años en desarrollo backend y frontend.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Habilidades</h2>
+            <p><strong>Lenguajes:</strong> Python, JavaScript, Java, C++</p>
+            <p><strong>Habilidades:</strong> Desarrollo web, bases de datos, arquitectura de software</p>
+        </div>
+        
         <div class="links">
+            <h2>Redes Sociales</h2>
             <a href="https://github.com/tuperfil" target="_blank">GitHub</a>
             <a href="https://linkedin.com/in/tuperfil" target="_blank">LinkedIn</a>
         </div>
     </div>
+    
+    <div class="footer">
+        <p>Contacto: juanperez@example.com | Tel: +123 456 7890</p>
+    </div>
 </body>
 </html>
+
